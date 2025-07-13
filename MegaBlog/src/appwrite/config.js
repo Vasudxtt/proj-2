@@ -78,20 +78,20 @@ export class Service{
     }
   }
 
-  // async getPosts(queries=[Query.equal("status","active")]){
-  //   try {
-  //     return await this.databases.listDocuments(
-  //       conf.appwriteDatabaseId,
-  //       conf.appwriteCollectionId,
-  //       // [Query.equal("status","active")]
-  //       // because we have declared it above only
-  //       queries
-  //     )
-  //   } catch (error) {
-  //     throw error;
-  //     return false
-  //   }
-  // }
+  async getPosts(queries=[Query.equal("status","active")]){
+    try {
+      return await this.databases.listDocuments(
+        conf.appwriteDatabaseId,
+        conf.appwriteCollectionId,
+        // [Query.equal("status","active")]
+        // because we have declared it above only
+        queries
+      )
+    } catch (error) {
+      throw error;
+      return false
+    }
+  }
 
   // file upload services
 
