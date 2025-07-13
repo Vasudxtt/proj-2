@@ -125,22 +125,22 @@ export class Service{
 
   // file preview
 
-//   async getFilePreview(fileId){
-//     // try {
-//       return this.storage.getFilePreview(
-//         conf.appwriteBucketId,
-//         fileId
-//         // 2000,
-//         // 2000,
-//         // "top",
-//         // 100
-//       )
-//     // } catch (error) {
-//     //   throw error;
-//     //   return false
-//     // }
-//   }
-// }
+  async getFilePreview(fileId){
+    // try {
+      return this.storage.getFilePreview(
+        conf.appwriteBucketId,
+        fileId
+        // 2000,
+        // 2000,
+        // "top",
+        // 100
+      )
+    // } catch (error) {
+    //   throw error;
+    //   return false
+    // }
+  }
+}
 
 
 const service = new service()
