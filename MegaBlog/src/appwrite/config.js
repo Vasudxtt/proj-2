@@ -95,18 +95,18 @@ export class Service{
 
   // file upload services
 
-  // async uploadFile(file){
-  //   try {
-  //     return await this.storage.createFile(
-  //       conf.appwriteBucketId,
-  //       ID.unique(),
-  //       file
-  //     )
-  //   } catch (error) {
-  //     throw error;
-  //     return false
-  //   }
-  // }
+  async uploadFile(file){
+    try {
+      return await this.storage.createFile(
+        conf.appwriteBucketId,
+        ID.unique(),
+        file
+      )
+    } catch (error) {
+      throw error;
+      return false
+    }
+  }
 
   // file delete
 
