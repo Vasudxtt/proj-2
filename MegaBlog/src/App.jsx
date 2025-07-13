@@ -18,18 +18,15 @@ function App() {
     }
   })
   .finally(()=>{
-    setLoading(false);
+    setLoading(false)
   })
  },[])
 
  const dispatch = useDispatch();
  
-  return (
-    <>
-    <h1>A blog app with appwrite
-    </h1>
-    </>
-  )
+ return !loading ?(
+  <div className=''></div>
+ ):(null)
 }
 
 export default App
