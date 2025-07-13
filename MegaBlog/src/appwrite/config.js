@@ -110,18 +110,18 @@ export class Service{
 
   // file delete
 
-  // async deleteFile(fileId){
-  //   try {
-  //     await this.storage.deleteFile(
-  //       conf.appwriteBucketId,
-  //       fileId
-  //     )
-  //     return true
-  //   } catch (error) {
-  //     throw error;
-  //     return false
-  //   }
-  // }
+  async deleteFile(fileId){
+    try {
+      await this.storage.deleteFile(
+        conf.appwriteBucketId,
+        fileId
+      )
+      return true
+    } catch (error) {
+      throw error;
+      return false
+    }
+  }
 
   // file preview
 
