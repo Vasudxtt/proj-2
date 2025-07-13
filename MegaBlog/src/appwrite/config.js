@@ -65,18 +65,18 @@ export class Service{
     }
   }
 
-  // async getPost(slug){
-  //   try {
-  //     return await this.databases.getDocument(
-  //       conf.appwriteDatabaseId,
-  //       conf.appwriteCollectionId,
-  //       slug
-  //     )
-  //   } catch (error) {
-  //     throw error;
-  //     return false
-  //   }
-  // }
+  async getPost(slug){
+    try {
+      return await this.databases.getDocument(
+        conf.appwriteDatabaseId,
+        conf.appwriteCollectionId,
+        slug
+      )
+    } catch (error) {
+      throw error;
+      return false
+    }
+  }
 
   // async getPosts(queries=[Query.equal("status","active")]){
   //   try {
