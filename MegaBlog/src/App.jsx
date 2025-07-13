@@ -25,7 +25,7 @@ function App() {
  const dispatch = useDispatch();
  
  return !loading ?(
-  <div className='min-h-sc'></div>
+  <div className='min-h-screen flex flex-wrap content-between bg-gray-400'>test</div>
  ):(null)
 }
 
