@@ -25,7 +25,7 @@ function App() {
  const dispatch = useDispatch();
  
  return !loading ?(
-  <div className=''></div>
+  <div className='min-h-sc'></div>
  ):(null)
 }
 
