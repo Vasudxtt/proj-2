@@ -2,10 +2,12 @@ import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
 import Container from "./container/Container";
 import Logo from "./Logo/Logo";
+import LogoutBtn from "./Header/LogoutBtn";
 
 export default index.js= {
   Header,
   Footer,
   Container,
-  Logo
+  Logo,
+  LogoutBtn
 }
